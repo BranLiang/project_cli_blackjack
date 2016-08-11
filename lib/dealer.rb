@@ -1,5 +1,7 @@
-class Dealer
-  def initialize
-    @cards = []
+class Dealer < Human
+
+  def over_17?
+    cards_sum > 17
   end
+
 end

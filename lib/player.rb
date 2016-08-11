@@ -1,9 +1,10 @@
-class Player
-  attr_accessor :bank, :bet, :cards
+class Player < Human
+  attr_accessor :bank, :bet
 
   def initialize
+    super
     @bank = 2000
     @bet = 100
-    @cards = []
   end
+
 end
